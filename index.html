@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Global Temperature</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 class="title">Average World Temperature</h1>
+        <h3>Testing <a href="https://www.chartjs.org/">Chart.js</a> With Data from NASA</h3>
+        <p>The following chart shows data from the Goddard Institute for Space Studies -
+            <a href="https://data.giss.nasa.gov/gistemp/" target="_blank">GISS.</a>
+            Information about the Zonal Annual Mean originates from the NASA
+            <a href="https://earthobservatory.nasa.gov/" target="_blank">Earth Observatory</a>
+        </p>
+        <div class="action">
+            <p>Press the button below to see the data!</p>
+            <button class="btn" onclick="createChart()">Get Data</button>
+        </div>
+    </header>
+
+
+
+    <!-- Chart -->
+    <div class="chart-container">
+        <canvas id="chart" width="800" height="400"></canvas>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <footer>
+            <p>Chart developed using Chart.js. Data obtained from GISS and NASA. Emre Cakmak <span
+                    id="footer-date">2020</span></p>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
